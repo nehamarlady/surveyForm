@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title"> Survey Form</h1>
+      <p id="description">Please fill the survey form</p>
+      <form id ="survey-form" action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label for="name" id="name-label" >Name <input required id="name" name="name" placeholder="Enter your name" ></label>
+        <label for="email" id="email-label">Email <input required id="email" name="email" type="email" placeholder="Enter your email"></label>
+        <label for="number" id="number-label">Age(optional) <input type="number" id="number" name="number" min="18" max="100" placeholder="Age"></label>
+        
+
+        <label>Which option best describes your current role?<select id="dropdown">
+          <option>Select current role</option>
+          <option>Student</option>
+          <option>Full time Job</option>
+          <option>Full time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Explain your behaviour? <input type="radio" name="personality"value="extrovert" id="extrovert" class="inline"> Extrovert</label>
+          <label><input type="radio" name="personality" value="introvert" id="introvert" class="inline"> Introvert</label>
+          <label><input type="radio" name="personality" value="ambivert" id="ambivert" class="inline"> Ambivert</label>
+          <label><input type="radio" name="personality" value="omnivert" id="omnivert" class="inline"> Omnivert</label>
+</fieldset>
+      <fieldset>
+        <label>What is your interests? 
+        <input type="checkbox" name="dance" id="dance" value="dance" class="inline"> Dance
+        <input type="checkbox" name="music" id="music" value="music" class="inline"> Music
+        <input type="checkbox" name="code" id="code" value="code" class="inline"> Coding
+        <input type="checkbox" name="cook" id="cook" value="cook" class="inline"> Cooking
+        </label> 
+        </fieldset>
+      
+      <fieldset>
+        <label for="textarea"> Tell about yourself <textarea id="textarea" name="textarea"  placeholder="I like to...." rows="5" cols="40"></textarea></label>
+      </fieldset>
+      <input id ="submit" type="submit" value="Submit">
+      </form>
+    </body>
+</html>
