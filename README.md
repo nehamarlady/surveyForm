@@ -1,1 +1,1 @@
-# surveyForm i sthe certification project of responsive web design free code camp
+# surveyForm is the certification project of responsive web design free code camp
